@@ -1,0 +1,57 @@
+name: quran_app
+description: Quran app using hafs_smart_v8 dataset.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  wakelock_plus: ^1.2.8
+  google_fonts: ^6.2.1
+  shared_preferences: ^2.2.2
+  url_launcher: ^6.2.5
+  package_info_plus: ^8.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.0
+  image: ^4.0.17
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/pages/
+    - assets/data/hafs_smart_v8.json
+    - assets/data/quran.json
+    - assets/tafseer/
+    - assets/azkar/
+    - assets/icon/
+
+  fonts:
+    - family: QuranUthmani
+      fonts:
+        - asset: assets/fonts/uthmanic_hafs_v20.ttf
+
+flutter_launcher_icons:
+  image_path: "assets/icon/app_icon.png"
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    background_color: "#1B5E20"
+    theme_color: "#1B5E20"
+  windows:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+  macos:
+    generate: true
+    image_path: "assets/icon/app_icon.png"

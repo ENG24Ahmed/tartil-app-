@@ -1,0 +1,55 @@
+===============================================
+  ربط تطبيق ترتيل بـ GitHub
+  الرابط: https://github.com/ENG24Ahmed/tartil-app-
+===============================================
+
+■ نفّذ الأوامر التالية بالترتيب
+──────────────────────────────
+افتح PowerShell أو Command Prompt وانسخ كل أمر ثم اضغط Enter.
+
+
+1) ادخل لمجلد المشروع:
+   cd C:\Users\DELL\Desktop\quran_app
+
+
+2) تهيئة Git (لو أول مرة):
+   git init
+
+
+3) إضافة كل الملفات:
+   git add .
+
+
+4) حفظ التعديلات (commit):
+   git commit -m "تطبيق ترتيل - مصحف وتفسير وأذكار"
+
+
+5) ربط المشروع بالمستودع على GitHub:
+   git remote add origin https://github.com/ENG24Ahmed/tartil-app-.git
+
+
+   لو ظهر خطأ "remote origin already exists" شغّل هذا ثم ارجع لخطوة 5:
+   git remote remove origin
+
+
+6) تسمية الفرع main:
+   git branch -M main
+
+
+7) رفع المشروع على GitHub:
+   git push -u origin main
+
+
+■ بعد النجاح
+────────────
+- ادخل على: https://github.com/ENG24Ahmed/tartil-app-
+- راح تشوف كل ملفات المشروع.
+- أرسل نفس الرابط لصاحبك؛ إذا المستودع Public يدخل ويشوف ويحمّل بدون حساب.
+  إذا Private أضفه كـ Collaborator من: Settings → Collaborators → Invite.
+
+
+■ لو طلب منك تسجيل دخول عند git push
+────────────────────────────────────
+- Username: ENG24Ahmed
+- Password: استخدم Personal Access Token من GitHub
+  (Settings → Developer settings → Personal access tokens → Generate)
